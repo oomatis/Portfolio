@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Portfolio</title>
+</head>
+<body>
+    <main class="flex2">
+    <header> 
+        <nav>  
+        <div class="cabeçalho">
+            <li>
+                <a class="active" href="https://www.linkedin.com/in/felipe-gabriel-b152a630b/"><b>Home</b></a>
+            </li>
+            <li>
+                <a href="/file:///C:/Users/Paulo/Documents/TrilhasPasta/Desafio3/hability.html"><b>Habilidades</b></a>
+            </li>
+            <li>
+                <a href="/file:///C:/Users/Paulo/Documents/TrilhasPasta/Desafio3/index.html#"><b>Projetos</b></a>
+            </li>
+        </div>
+    </nav> 
+    </header>
+
+    <div class="interface">
+        <div class="flex">
+            <div class="img-site">
+                <img src="assets/image.png" alt="foto" class="fundo">
+                <img src="assets/Foto.png" alt="foto0" class="foto0">
+            </div>
+        </div>
+    </div>
+
+    <div class="info-text">
+        <div class="text">
+            <h1>Felipe <span>Gomes</span></h1>
+            <p>Olá! Sou o Felipe! Estudo e trabalho com programação há 3 anos, mais voltado a <br>linguagens como C, JavaScript, GML e Java</p>
+            <h3><b>Acesse minhas redes:</b></h3>
+        </div>
+        <button class="boxredes" onclick="gotoLink(this)" value="https://www.linkedin.com/in/felipe-gabriel-b152a630b/">
+            <img src="Assets/LinkedinLogo.png" alt="fotoLinkedin" class="box1_redes_link_imagens" style="height: 10px; width: 10px;">
+            Linkedin
+        </button>
+        <br>
+        <br>
+        <button class="boxredes" onclick="gotoLink(this)" value="https://github.com/oomatis">
+            <img src="assets/GitHubLogo.png" alt="fotoGithub" class="box1_redes_link_imagens" style="height: 10px; width: 10px;">
+            GitHub
+        </button>
+
+        <script>
+            function gotoLink(link){
+                console.log(link.value);
+                //location.href = link.value;
+                window.open(link.value);
+            }
+        </script>
+
+    </div>
+            <footer>
+                <div class="rodape">
+                    <hr>
+                    <br>
+                <div class="logo_alura">
+                    <img src="assets/Logo_Alura_Include_(1).svg" alt="">
+                </div>
+                <div class="text">
+                    <p>Desenvolvido por Felipe Gomes</p>
+                </div>
+            </div>
+            </footer>
+        </div>
+</body>
+</html>
